@@ -3,13 +3,14 @@
 wxIMPLEMENT_APP(App);
 
 bool App::OnInit() {
-	MainFrame *mainFrame = new MainFrame("Station V => Penteract!");
+	MainFrame *mainFrame = new MainFrame("Station V => Penteract!");	
 
 	mainFrame->SetSize(900,700);
-	mainFrame->SetMinSize(wxSize(900,700));
-	mainFrame->SetMaxSize(wxSize(900,700));
-	mainFrame->SetVirtualSize(wxSize(1500,1200));
-	mainFrame->SetScrollbar(wxVERTICAL, 0, 16, 500, false);
+	/*mainFrame->SetMinSize(wxSize(900,700));
+	mainFrame->SetMaxSize(wxSize(900,700));*/
+	mainFrame->SetVirtualSize(wxSize(3500,3200));
+	
+	
 	mainFrame->Center();
 	
 	// Setting the title icon. ico => TYPE_ICO.
