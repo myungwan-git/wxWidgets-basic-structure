@@ -13,6 +13,12 @@ MainFrame::MainFrame(const wxString &frameTitle)
 	wxPanel *panel = new wxPanel(sw);
 	
 	wxButton *button1 = new wxButton(sw, wxID_ANY, "roll", wxPoint(50, 200), wxSize(200, 50));
+	/*
+	button1->SetBackgroundColour(wxColor(30,33,36));
+	button1->SetForegroundColour(wxColor(30, 33, 33));
+	*/
+	button1->SetBackgroundStyle(wxBG_STYLE_ERASE);
+
 	wxButton *button2 = new wxButton(sw, wxID_ANY, "pitch", wxPoint(50, 400), wxSize(200, 50));
 	wxButton *button3 = new wxButton(sw, wxID_ANY, "yaw", wxPoint(50, 600), wxSize(200, 50));
 	wxButton *button4 = new wxButton(sw, wxID_ANY, "sway", wxPoint(50, 800), wxSize(200, 50));
